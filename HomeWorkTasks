@@ -32,4 +32,28 @@ The User Should be able to Build a BankAccount objects in different ways like
  Sprint -2
  
  Create an Application to add/store appointment of Patient for a Doctor given a Date the doctors appointment should be printed
+ ================
+ 
+ Bank {
+ 
+    String bankName ;
+    List<Customer> custList
+ 
+ }
+ 
+ 
+ Customer {
+ 
+    customerId;
+    customerName;
+    List<Bank> banks
+ 
+ }
+ 
+ 
+ Create a JDBC Application to store the details of Bank and Customer in different table 
+ and using appropriate query  when a customerId is given should list bank accounts he holds
+ same way given branchName it should list the customers of that branch
+ 
+ 
  
