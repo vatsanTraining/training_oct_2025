@@ -55,5 +55,16 @@ The User Should be able to Build a BankAccount objects in different ways like
  and using appropriate query  when a customerId is given should list bank accounts he holds
  same way given branchName it should list the customers of that branch
  
+ ========================================
+ 
+ 
+ 1) Application receives log  in a csv format  consisting of date,time,Location severity(LOW,HIGH,NORMAL) and cause , 
+need to store this data in a collection use streams API to achieve the following
+
+1)  Messages  location wise and sorted by date
+2) Messages by severity 
+3) Messages with date and cause
+4) Message whose severity is High
+
  
  

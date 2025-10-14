@@ -39,7 +39,7 @@ public class TxnDemo {
 			int rowUpdated =upStmt.executeUpdate();
 			
 			
-			if(rowAdded>0 && rowUpdated==1) {
+			if(rowAdded==1 && rowUpdated==1) {
 				System.out.println("Txn successful");
 				con.commit();
 			}
