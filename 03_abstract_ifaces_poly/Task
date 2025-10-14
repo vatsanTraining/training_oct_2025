@@ -1,0 +1,32 @@
+
+
+Create a Java Interface Automobile with 
+methods like getColor,getPrice,getModel 
+
+Create Classes MarutiCar,PulsarBike
+
+Create a Class ShowRoom which will be able to print 
+Quotation . The User will give his choice of vechicle
+use a Factory method to create a Object of his choice.
+
+
+class ShowRoom
+
+  Automobile autoFactory(int ch)
+  
+  printQuote(Automobile auto)
+  
+  
+
+
+Test the code with a client Application  .
+
+
+
+Phase -2
+
+As the Business grows the client Adds a New Product 
+John Deer Tractor, Use the OOP and SOLID principles 
+to design the classes and methods and test it.
+
+

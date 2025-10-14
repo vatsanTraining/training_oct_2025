@@ -1,0 +1,59 @@
+
+Create a Java Class BankAccount with fields 
+like accountNumber,accountHolderName,balance...
+
+The User Should be able to Build a BankAccount objects in different ways like
+
+ BankAccount with just accountNumber
+ BankAccount with just accountNumber and accountHolderName
+ BankAccount with all the 3 fields
+ 
+ Use The Static Nested Class and Object Reference and fluid design
+ 
+ 
+ 
+ Store the Details of BankAccount in an Array and print the top N 
+ accounts by Balance Amount
+ 
+ 
+ ===========================
+ 
+ Create a abstract java class Product with required attribute and create two subclasses
+ named Textile and Grocery add appropriate attributes for them also
+ 
+ 
+ Store the Product and its subclasses  in a Suitable collection class and retrieve the elements too.
+
+ Sprint-1
+ 
+ Create a Java Application to Store the Details of Doctor and each Doctors Patients in a Suitable Collection
+ given a Doctor application should retrieve a list of his patients
+ 
+ Sprint -2
+ 
+ Create an Application to add/store appointment of Patient for a Doctor given a Date the doctors appointment should be printed
+ ================
+ 
+ Bank {
+ 
+    String bankName ;
+    List<Customer> custList
+ 
+ }
+ 
+ 
+ Customer {
+ 
+    customerId;
+    customerName;
+    List<Bank> banks
+ 
+ }
+ 
+ 
+ Create a JDBC Application to store the details of Bank and Customer in different table 
+ and using appropriate query  when a customerId is given should list bank accounts he holds
+ same way given branchName it should list the customers of that branch
+ 
+ 
+ 
