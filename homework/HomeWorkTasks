@@ -68,3 +68,25 @@ need to store this data in a collection use streams API to achieve the following
 
  
  
+ 
+ invoices.stream().reduce((inv1, inv2) -> 
+			inv1.getAmount() > inv2.getAmount() ? inv1 : inv2
+		).ifPresent(maxInvoice -> 
+			System.out.println("Invoice with max amount: " + maxInvoice)
+		);
+		
+		double total =invoices.stream().reduce(10.0, (sum, inv) -> sum + inv.getAmount(), Double::sum);
+		
+		System.out.println("Total amount using reduce: " + total);
+		
+		System.out.println("Total amount of all invoices: " + 
+			invoices.stream().mapToDouble(Invoice::getAmount).sum()
+		);
+
+		invoices.stream().map(e ->e.getCustomer()).reduce((c1, c2) -> c1 + ", " + c2)
+			.ifPresent(customers -> System.out.println("Customers: " + customers));
+		
+		String customers =invoices.stream().map(e ->e.getCustomer()).reduce("custList:=>",(c1, c2) -> c1 + ", " + c2);
+		
+		System.out.println(customers);
+ 

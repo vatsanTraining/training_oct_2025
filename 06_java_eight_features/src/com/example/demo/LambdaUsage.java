@@ -50,11 +50,10 @@ public class LambdaUsage {
 	// Lambdas can be returned from  a method
 
 	
-	public static Supplier<Predicate<Integer>> getPredicate(int key){
+	public static  Supplier<Predicate<Integer>> getPredicate(int key){
 		
 		
 			Predicate<Integer> grtThan = (e) -> e>80;
-
 			
 			Supplier<Predicate<Integer>> supplier = () ->  grtThan;
 			
@@ -88,7 +87,6 @@ public class LambdaUsage {
 // Using Lambda to implement a Functional Interface - Concise and less verbose
 		
 		Predicate<String> testForChar = (t) -> t.startsWith("A");
-		
 		
 		
 		

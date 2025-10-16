@@ -170,7 +170,14 @@ public class StreamApplication {
 		 // the session should be completed in next 45 minutes , if so what will be end time
 		 
 		 
+		 List<String> names = Arrays.asList("Vengsarkar", "Kambli", "Tendulkar", "Hazare", "Agarwal");
 		 
+		List<String> newList = names.stream().filter(e ->e.length()>7).collect(ArrayList::new, ArrayList::add, ArrayList::addAll);
+		 
+		 
+		newList.forEach(System.out::println);
+		
+		
 		 
 	}
 
