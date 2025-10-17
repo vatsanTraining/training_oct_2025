@@ -1,4 +1,17 @@
 
+Create a Maven project skipping archetype selection
+choose pom as package 
+add mysql dependency in the pom.xml
+
+1) Create module payment_module add parent project
+2) create another module  order_module add parent project 
+
+observe you are able to access all the mysql related classes in submodule
+
+
+
+
+=============================
 Create a Java Class BankAccount with fields 
 like accountNumber,accountHolderName,balance...
 
