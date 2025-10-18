@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: 10_spring_jdbc
+  datasource:
+   url: jdbc:mysql://localhost:3306/test
+   username: root
+   password: srivatsan
+
+logging:
+  level:
+    '[org.springframework.jdbc]': trace   

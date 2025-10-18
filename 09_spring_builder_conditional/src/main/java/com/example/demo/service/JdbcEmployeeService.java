@@ -9,8 +9,8 @@ import org.springframework.stereotype.Service;
 import com.example.demo.conditionals.FirstCondition;
 
 @Service
-//@ConditionalOnProperty(name="spring.application.name",havingValue = "bajaj")
-@Conditional(FirstCondition.class)
+@ConditionalOnProperty(name="spring.application.name",havingValue = "bajaj")
+//@Conditional(FirstCondition.class)
 public class JdbcEmployeeService implements EmployeeService {
 
 	
