@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: 11_spring_jpa
+  datasource:
+   url: jdbc:mysql://localhost:3306/test
+   username: root
+   password: srivatsan
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        generate_statistics:true
+logging:
+  level:
+    '[org.springframework.jdbc,org.springframework.data.jpa,org.hibernate.SQL,com.zaxxer.hikari,org.hibernate.stat]' : trace
+
+#  structured:
+#    format:
+#      console: ecs
+#      file: logstash
+#
+#  file:
+#    name: log.json
+
+
