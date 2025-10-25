@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Add Customer </title>
+</head>
+<body>
+
+
+<h2 style="text-align: center;"> Add Customer Details</h2>
+
+<form th:action="customer" th:object="${command}" method="post">
+
+ <div>
+ 
+  <label>Customer Id</label>
+  <input th:field="*{customerId}">
+ </div>
+ 
+ 
+ <div>
+ 
+  <label>Customer Name</label>
+  <input th:field="*{customerName}" type="text" required="required">
+ </div>
+ 
+ <div>
+ <label>Customer Type</label>
+ 
+ <select  th:field="${command.customertype}">
+       <option th:each="eachType : ${typeList}" 
+           th:value="${eachType}" th:text="${eachType}"></option>
+</select>
+ 
+ </div>
+ <div>
+ 
+  <label>Email</label>
+  <input th:field="*{email}" type="email" required="required">
+ </div>
+ 
+ <div>
+ 
+  <label>Mobile Number</label>
+  <input th:field="*{mobileNumber}" type="text">
+ </div>
+ <div>
+ 
+ <fieldset>
+ <legend>Billing Address</legend>
+ 
+ 
+  <label>Address Line 1</label>
+  <input th:field="*{billingAddress.lineOne}" type="text">
+ 
+ 
+  <label>Address Line2</label>
+  <input th:field="*{billingAddress.lineTwo}" type="text">
+ 
+ 
+ 
+  <label>City</label>
+  <input th:field="*{billingAddress.city}" type="text">
+ 
+ 
+  <label>Mobile Number</label>
+  <input th:field="*{billingAddress.pincode}" type="text">
+ 
+ 
+ </fieldset>
+ 
+  </div>
+ <div>
+ 
+ <fieldset>
+ <legend>Shipping Address</legend>
+ 
+ 
+  <label>Address Line 1</label>
+  <input th:field="*{shippingAddress.lineOne}" type="text">
+ 
+ 
+  <label>Address Line2</label>
+  <input th:field="*{shippingAddress.lineTwo}" type="text">
+ 
+ 
+ 
+  <label>City</label>
+  <input th:field="*{shippingAddress.city}" type="text">
+ 
+ 
+  <label>Mobile Number</label>
+  <input th:field="*{shippingAddress.pincode}" type="text">
+ 
+ 
+ </fieldset>
+ 
+  </div>
+ 
+ <div>
+ <input type="Submit" value="Add Customer">
+ </div>
+</form>
+
+
+
+</body>
+</html>

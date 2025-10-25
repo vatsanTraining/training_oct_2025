@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: 13_spring_mvc
+  datasource:
+   url: jdbc:mysql://localhost:3306/test
+   username: root
+   password: srivatsan
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+logging:
+  level:
+    '[org.springframework.jdbc,org.springframework.data.jpa,org.hibernate.SQL]' : info

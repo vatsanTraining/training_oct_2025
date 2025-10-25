@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Customer With Image</title>
+<style type="text/css">
+
+.small{
+
+width: 50px;
+height: 50px;
+border: 2px solid gold;
+}
+</style>
+</head>
+<body>
+
+
+
+
+<p th:text="${customerName}"></p>
+<img th:src="${imageDataUrl}" alt="Customer Profile Image" class="small"/>
+</body>
+</html>
+
+
